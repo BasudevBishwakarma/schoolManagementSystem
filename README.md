@@ -61,17 +61,19 @@ The system is designed to be easily extendable, whether you're adding API connec
 
 🛠 Project Structure (Simplified)
 school-management-system/
-├── public/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   └── ...
-├── db.json5          # Mock database file
-├── tailwind.config.js
-├── postcss.config.js
-├── index.html
-└── README.md
+
+| Path                 | Description                 |
+| -------------------- | --------------------------- |
+| `/public`            | Public assets               |
+| `/src/components`    | Reusable React components   |
+| `/src/pages`         | Route-based page components |
+| `/src/services`      | API calls and data handlers |
+| `db.json5`           | JSON Server mock database   |
+| `tailwind.config.js` | Tailwind CSS configuration  |
+| `postcss.config.js`  | PostCSS configuration       |
+| `index.html`         | Main HTML template          |
+| `README.md`          | Project documentation       |
+
 
 
 📬 Feedback
