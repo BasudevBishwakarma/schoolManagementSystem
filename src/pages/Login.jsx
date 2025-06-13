@@ -64,11 +64,18 @@ const Login = ({ messageApi }) => {
             className="w-[545px] p-[60px] max-xs:w-full max-xs:p-10 border rounded bg-white"
             style={{ backgroundColor: "#FFFFFF" }}
           >
-            <Text strong style={{ color: "#638C2D", fontSize: 12 }}>
-              LOGIN
+            <div>
+              <img
+                src="./../../public/school.svg"
+                alt="schoolLogo"
+                className="size-[34px]"
+              />
+            </div>
+            <Text strong style={{ color: "#638C2D", fontSize: 14 }}>
+              School
             </Text>
             <Title level={2} style={{ marginBottom: 8 }}>
-              Welcome Back
+              Welcome
             </Title>
             <Text
               type="secondary"

@@ -3,6 +3,8 @@ import { Modal, Input, DatePicker, Switch } from "antd";
 import { Controller, useForm } from "react-hook-form";
 import axios from "axios";
 import dayjs from "dayjs";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { gradeSchema } from "../schema/addGradeSchema";
 
 const resetValue = {
   gradeName: "",
@@ -19,6 +21,7 @@ const AddGradeModal = ({ isOpen, handleCancel, onSubmit, gradeId }) => {
     formState: { errors },
   } = useForm({
     defaultValues: resetValue,
+    resolver: zodResolver(gradeSchema),
   });
 
   const [getGradeDataById, setGetGradeDataById] = useState(null);
