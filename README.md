@@ -1,12 +1,78 @@
-# React + Vite
+🎓 School Management System (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern School Management System frontend built using Vite, pnpm, Tailwind CSS, and React. This project is designed for modular expansion and clean UI management using tools like Ant Design, React Router, and React Hook Form.
 
-Currently, two official plugins are available:
+🚀 Features
+✅ Authentication with Dummy API (with protected routes)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎨 Modern UI with Ant Design + Tailwind CSS
 
-## Expanding the ESLint configuration
+🧭 Routing handled by React Router
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧾 Form handling with react-hook-form and validation via zod
+
+📊 Data Visualization with @ant-design/plots
+
+🔄 CRUD Operations on the Grade Page using json-server
+
+🔍 Search, Pagination & Tables implemented on other pages
+
+📅 Date management with dayjs
+
+🔌 Data fetching powered by axios
+
+
+📁 Tech Stack
+| Tech            | Purpose                         |
+| --------------- | ------------------------------- |
+| Vite            | Project bundler                 |
+| pnpm            | Package manager                 |
+| Tailwind CSS    | Utility-first styling framework |
+| Ant Design      | Component UI framework          |
+| React Router    | Navigation and routing          |
+| React Hook Form | Form state management           |
+| Zod             | Schema validation               |
+| Axios           | HTTP client                     |
+| dayjs           | Date formatting                 |
+| json-server     | Mock REST API for CRUD          |
+| antd-plots      | Chart & graph library           |
+
+
+⚙️ Getting Started
+
+1. Clone the repository
+git clone https://github.com/your-username/school-management-system.git
+cd school-management-system
+
+2. Install dependencies
+pnpm install
+
+3. Start the development server
+pnpm dev
+
+4. Run the mock API server
+npx json-server db.json5 --watch
+⚠️ Make sure the db.json5 file is located outside the main src folder, as it stores the application's mock data.
+
+📌 Notes
+Only the Grade page supports full CRUD operations (Create, Read, Update, Delete) via json-server.
+Other pages display static data tables with design features like search and pagination for layout and UI demonstration.
+The system is designed to be easily extendable, whether you're adding API connections, more charts, or new modules.
+
+🛠 Project Structure (Simplified)
+school-management-system/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   └── ...
+├── db.json5          # Mock database file
+├── tailwind.config.js
+├── postcss.config.js
+├── index.html
+└── README.md
+
+
+📬 Feedback
+Feel free to raise issues, fork, or submit pull requests. If you find the project helpful, a ⭐️ would be appreciated!
