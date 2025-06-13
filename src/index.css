@@ -1,0 +1,63 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-sans: "Roboto", sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background: #f9f7f3;
+}
+
+body,
+.ant-typography,
+.ant-btn,
+.ant-menu {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #94a3b8;
+    border-radius: 4px;
+}
+
+p,
+h1 {
+    margin: 0 !important;
+}
+
+/* Unselected menu item text and icon */
+.custom-menu .ant-menu-item,
+.custom-menu .ant-menu-submenu-title {
+    color: #ffffff !important;
+}
+
+.custom-menu .ant-menu-item .anticon,
+.custom-menu .ant-menu-submenu-title .anticon {
+    color: #ffffff !important;
+    font-size: 18px;
+}
+
+/* Selected menu item text and icon */
+.custom-menu .ant-menu-item-selected,
+.custom-menu .ant-menu-submenu-selected {
+    color: #00509d !important;
+    background-color: #ffffff !important;
+}
+
+.custom-menu .ant-menu-item-selected .anticon,
+.custom-menu .ant-menu-submenu-selected .anticon {
+    color: #00509d !important;
+}
